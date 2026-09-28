@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form practice</title>
+  </head>
+  <body>
+    <form action="#" id="formParts">
+      <h1>Form for Job</h1>
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        id="username"
+        placeholder="type your username"
+        required
+      />
+      <br /><br />
+      <label for="email">Email:</label>
+      <input type="email" placeholder="type your email" required />
+      <br /><br />
+      <label for="password">Password:</label>
+      <input type="password" placeholder="type your password" required />
+      <br /><br />
+      <label for="date">Date of birth:</label>
+      <input type="date" required />
+      <br /><br />
+        <label for="gender">Gender</label>
+        <br>
+            <input type="radio" name="g"><label for="g">Male</label>
+        <br>
+            <input type="radio" name="g"><label for="g">Female</label>
+        <br><br>
+      <fieldset>
+        <legend><b>Additional information</b></legend>
+        <label for="file">upload your CV:</label>
+        <input type="file" required />
+        <br /><br />
+        <label for="color">Favourite Color:</label>
+        <input type="color" name="color" />
+        <br /><br />
+        <select name="dc">
+            
+        </select>
+        <br><br>
+        <label for="textarea">Type your description or bio:</label>
+        <textarea name="textarea"></textarea>
+        <br /><br />
+        <label for="skills">Select you skills:</label>
+        <br />
+        <input type="checkbox" name="wd" id="wd" /><label for="wd"
+          >Web development</label
+        >
+        <br />
+        <input type="checkbox" name="gd" id="gd" /><label for="gd"
+          >Graphic designing</label
+        >
+        <br />
+        <input type="checkbox" name="ai/ml" id="ai/ml" /><label for="ai/ml"
+          >Artifical intelligence/ Machine learning</label
+        >
+        <br />
+        <p style="font-size: 11px; color: grey">Adding more soon...</p>
+      </fieldset>
+      <br />
+      <button id="submitBtn" onclick="removeInputs()">Submit</button>
+    </form>
+
+    <script>
+      const formInputs = document.getElementById("formParts");
+      const submitBtn = document.getElementById("submitBtn");
+
+      function removeInputs() {
+        submitBtn.addEventListener("click", () => {
+          // formInputs.remove()
+          formInputs.replaceWith(`thank you for your consideration`);
+        });
+      }
+    </script>
+  </body>
+</html>
