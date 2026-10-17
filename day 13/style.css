@@ -1,0 +1,23 @@
+p{
+    width: 200px;
+    /* height: 100px;
+    overflow: auto; */
+    background-color: blue;
+    padding: 10px 20px 30px 40px;
+    margin: 20px 20px 30px 40px;
+}
+
+
+.lol{
+    text-shadow: 104px -43px 0px rgba(0,0,0,0.6);
+}
+
+
+div#clasd{
+    width: 50%;
+    height: 50vh;
+    background: #fff;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 44px -10px 7px 53px rgba(0,0,0,0.1);
+}
