@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Changa+One:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Changa One", sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+ul{
+    list-style: none;
+}
+#search{
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+}
